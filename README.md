@@ -15,19 +15,24 @@ This project evaluates the feasibility of ABG Motors' expansion into the Indian 
 
 ## 📂 Project Structure
 
-├── 01_data/
-│   ├── 01_raw/                   # Unprocessed Japanese & Indian datasets
-│   ├── 02_processed/             # Cleaned Japanese & Indian datasets
-│   └── 03_forecasted_results/    # Final prediction output (15,848 leads)
-├── 02_notebooks/
-│   ├── 01_data_preprocessing_eda  # Data cleaning and market exploration
-│   ├── 02_classification_model   # Logistic Regression training & validation
-│   └── 03_indian_market_forecast # Applying model to Indian lead set
-├── 03_models/
-│   ├── car_buyer_model.pkl       # Serialized Logistic Regression model
-│   └── scaler.pkl                # Saved Z-score scaler for consistency
-├── 04_visuals/                   # Tableau Dashboard (PDF) & Python trend plots
-└── README.md                     # Project overview and executive summary
+01_data/
+01_raw/                   # Unprocessed Japanese & Indian datasets
+02_processed/             # Cleaned Japanese & Indian datasets
+03_forecasted_results/    # Final prediction output (15,848 leads)
+
+02_notebooks/
+01_data_preprocessing_eda  # Data cleaning and market exploration
+02_classification_model   # Logistic Regression training & validation
+03_indian_market_forecast # Applying model to Indian lead set
+
+
+03_models/
+car_buyer_model.pkl       # Serialized Logistic Regression model
+scaler.pkl                # Saved Z-score scaler for consistency
+
+04_visuals/                   # Tableau Dashboard (PDF) & Python trend plots
+README.md                     # Project overview and executive summary
+
 
 ## 📈 Key Insights
 1.  **Affordability Correlation:** Purchase probability scales linearly with annual income, peaking at **70%+** for the >1.5M INR segment.
