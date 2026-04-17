@@ -42,10 +42,42 @@ scaler.pkl                # Saved Z-score scaler for consistency
 README.md                     # Project overview and executive summary
 
 
-## 📈 Key Insights
-1.  **Affordability Correlation:** Purchase probability scales linearly with annual income, peaking at **70%+** for the >1.5M INR segment.
-2.  **Replacement Cycle:** A significant "Upgrade Window" was identified for vehicles aged **more than a year (360+ days)**.
-3.  **Risk Mitigation:** Applied a conservative **75% probability threshold** to ensure the forecast remains grounded in high-intent buyer behavior.
+01_raw/ — Unprocessed Japanese & Indian datasets.
+
+02_processed/ — Cleaned Japanese & Indian datasets.
+
+03_forecasted_results/ — Final prediction output (15,848 high-intent leads).
+
+02_notebooks/
+
+01_data_preprocessing_eda.ipynb — Data cleaning and market exploration.
+
+02_classification_model.ipynb — Logistic Regression training & validation (AUC 0.74).
+
+03_indian_market_forecast.ipynb — Z-Score alignment and 0.75 threshold application.
+
+03_models/
+
+abg_log_reg_model.pkl — Serialized Logistic Regression model.
+
+abg_scaler.pkl — Saved Z-score scaler for cross-market consistency.
+
+04_visuals/ — Tableau Dashboard (PDF) & Python strategic plots.
+
+## 📈 Key Insights & Strategic Validation
+
+1. Cross-Border Distribution Alignment (The Z-Score)
+To account for the economic differences between Japan and India, I utilized Z-score Normalization. This ensured that "High Income" in India was mathematically aligned with the training data from Japan, allowing for a statistically sound forecast across different currencies.
+
+2. Market Confidence Analysis
+The "Double-Hump" Discovery: The probability distribution revealed a distinct "Premium Segment" (the spike at the far right).
+
+The Decision: While many leads fall into the 50-60% range, I consciously bypassed this "Market Noise" to focus on the high-certainty cluster.
+
+3. Threshold Optimization for ROI
+Strategy: Using a conservative 0.75 probability threshold, I filtered the 70,000 leads down to the top 15,848 high-intent prospects.
+
+Impact: This 0.75 "Passing Mark" ensures that ABG Motors prioritizes the most likely buyers, reducing potential marketing waste by ignoring low-confidence leads.
 
 ---
 *Developed by Akash Tiwari | Data Analyst*
