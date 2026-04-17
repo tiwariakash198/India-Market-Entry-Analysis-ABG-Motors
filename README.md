@@ -15,31 +15,20 @@ This project evaluates the feasibility of ABG Motors' expansion into the Indian 
 
 ## 📂 Project Structure
 
-01_data/
+## 📂 Project Structure
 
-01_raw/                   # Unprocessed Japanese & Indian datasets
-
-02_processed/             # Cleaned Japanese & Indian datasets
-
-03_forecasted_results/    # Final prediction output (15,848 leads)
-
-02_notebooks/
-
-01_data_preprocessing_eda  # Data cleaning and market exploration
-
-02_classification_model   # Logistic Regression training & validation
-
-03_indian_market_forecast # Applying model to Indian lead set
-
-03_models/
-
-car_buyer_model.pkl       # Serialized Logistic Regression model
-
-scaler.pkl                # Saved Z-score scaler for consistency
-
-04_visuals/                   # Tableau Dashboard (PDF) & Python trend plots
-
-README.md                     # Project overview and executive summary
+* **[01_data](./01_data/)**
+    * **[01_raw](./01_data/01_raw/)** — Unprocessed Japanese & Indian datasets.
+    * **[02_processed](./01_data/02_processed/)** — Cleaned Japanese & Indian datasets.
+    * **[03_forecasted_results](./01_data/03_forecast_results/)** — Final prediction output (15,848 leads).
+* **[02_notebooks](./02_notebooks/)**
+    * `01_data_preprocessing_and_eda.ipynb` — Data cleaning and exploration.
+    * `02_classification_modeling.ipynb` — Logistic Regression training.
+    * `03_indian_market_forecast.ipynb` — Z-Score alignment and 0.75 threshold.
+* **[03_models](./03_models/)**
+    * `abg_log_reg_model.pkl` — Serialized model.
+    * `abg_scaler.pkl` — Saved Z-score scaler.
+* **[04_visuals](./04_visuals/)** — Tableau Dashboard & Python trend plots.
 
 
 01_raw/ — Unprocessed Japanese & Indian datasets.
