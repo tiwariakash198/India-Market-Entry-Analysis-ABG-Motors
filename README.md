@@ -15,8 +15,6 @@ This project evaluates the feasibility of ABG Motors' expansion into the Indian 
 
 ## 📂 Project Structure
 
-## 📂 Project Structure
-
 * **[01_data](./01_data/)**
     * **[01_raw](./01_data/01_raw/)** — Unprocessed Japanese & Indian datasets.
     * **[02_processed](./01_data/02_processed/)** — Cleaned Japanese & Indian datasets.
